@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import brain from '../brain.svg';
-//Importamos componentes de Material UI
+//Importamos componentes, iconos de Material UI
 import Typography from '@material-ui/core/Typography';
 import {Button, Container, Box, AppBar, Toolbar} from '@material-ui/core';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 import './home.css';
 
@@ -35,7 +36,7 @@ function Home() {
 
         <Box className="box">
         <Link to="/menu" style={{ textDecoration: 'none' }}>
-        <Button variant="contained" color="primary">Iniciar</Button>
+        <Button startIcon={<PlayCircleFilledIcon />} variant="contained" color="primary">Iniciar</Button>
         </Link>
         </Box>
         
