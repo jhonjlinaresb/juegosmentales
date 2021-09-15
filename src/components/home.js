@@ -3,8 +3,11 @@ import {Link} from "react-router-dom";
 import brain from '../brain.svg';
 //Importamos componentes, iconos de Material UI
 import Typography from '@material-ui/core/Typography';
-import {Button, Container, Box, AppBar, Toolbar} from '@material-ui/core';
+import {Button, Container, Box, AppBar, Toolbar, BottomNavigation, BottomNavigationAction} from '@material-ui/core';
+
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './home.css';
 
@@ -41,7 +44,13 @@ function Home() {
         </Box>
         
         
-        
+        <footer>
+            <BottomNavigation showLabels>
+            
+            <BottomNavigationAction label="Facebook" icon={<FacebookIcon />} />
+            <BottomNavigationAction label="Github" icon={<GitHubIcon />} />
+            </BottomNavigation>
+        </footer>
         </Container>
     );
     }
