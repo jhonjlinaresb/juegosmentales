@@ -1,27 +1,47 @@
 import React from "react";
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import brain from '../brain.svg';
+//Importamos componentes de Material UI
+import Typography from '@material-ui/core/Typography';
+import {Button, Container, Box, AppBar, Toolbar} from '@material-ui/core';
 
-import Menu from "./menu";
+import './home.css';
 
 function Home() {
-   const handleClick = (onClick) => {
-       <Menu />
-   }
     
+
     return (
+        <Container display="flex" flexWrap="wrap">
         
-        <div className="App">
-        <h6>Juegos Mentales</h6>
+        <br />
+        <Box className="box">
+            <AppBar position="center"  color="primary">
+            <Toolbar variant="regular">
+            <Typography align="justify" variant="h4">
+            Juegos Mentales</Typography>
+            </Toolbar>
+            </AppBar>
+        </Box>
+        <br />
+        <Box className="box">
         <img src={brain} className="brain" alt="brain" />
-        <p>
-          Prepárate para alimentar tu mente...
-        </p>
+        </Box>
+
+        <Box className="box">
+            <Typography variant="h3" gutterBottom>
+            Prepárate para alimentar tu mente...
+            </Typography>
+        </Box>
+
+        <Box className="box">
+        <Link to="/menu" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" color="primary">Iniciar</Button>
+        </Link>
+        </Box>
         
-        <BrowserRouter>
-        <button onClick={handleClick}>Iniciar</button>
-        </BrowserRouter>
-        </div>
+        
+        
+        </Container>
     );
     }
 
