@@ -1,11 +1,11 @@
 import React from "react";
 
-const Game1 = () => {
+const Game2 = () => {
   return (
     <div className="game1">
-      <h1>Game 1</h1>
+      <h1>Game 2</h1>
     </div>
   );
 }
 
-export default Game1;
+export default Game2;

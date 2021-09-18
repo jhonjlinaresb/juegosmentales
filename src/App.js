@@ -9,7 +9,7 @@ import Menu from './components/menu';
 import Home from './components/home';
 
 //Importamos los containers que generan los juegos.
-import Game1 from './containers/principiante/game1';
+import Game1 from './containers/principiante/game1/game1';
 
 
 
@@ -22,7 +22,8 @@ function App() {
     <Route exact path="/" component={Home} />
     <Route path="/menu" component={Menu} exact/>
     
-    <Route path="/game1" exact> <Game1 game1={Game1}/> </Route>
+    <Route path="/game1" component={Game1} exact />
+    
     </Switch>
     </BrowserRouter>
   );

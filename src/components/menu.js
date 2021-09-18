@@ -16,12 +16,21 @@ import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import './menu.css';
 
 const useStyles = makeStyles({
-  root: {
+    root: ({
     width: '100%',
     height: '100%',
     backgroundColor: '#0277bd',
     color: 'white',
-  },
+  }),
+  rootAux: ({
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'black',
+    color: 'white',
+  }),
+  text: ({
+    textDecoration: 'none',
+  }),
 });
 
 function Menu() {
@@ -50,9 +59,10 @@ function Menu() {
       <br />
       <br />
 
+    <Link to="/game1" className={classes.text}>
     <Card className={classes.root}>
     <CardActionArea>
-    <CardContent>
+        <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Principiante <AccessibilityNewIcon />
           </Typography>
@@ -63,11 +73,12 @@ function Menu() {
         </CardContent>
      </CardActionArea>
     </Card>
+    </Link>
     <br />
      
-    <Card className={classes.root}>
+    <Card className={classes.rootAux}>
     <CardActionArea>
-    <CardContent>
+        <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Curioso <NaturePeopleIcon />
           </Typography>
