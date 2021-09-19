@@ -6,6 +6,7 @@
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
+    "@nicolo-ribaudo/chokidar-2": "^2.1.8-no-fsevents.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -18,11 +19,14 @@
     "react-scripts": "^1.1.5",
     "web-vitals": "^1.0.1"
   },
+  "resolutions": {
+    "webpack-dev-server/chokidar": "^2"
+  },
   "scripts": {
-    "start": "yarn start",
-    "build": "yarn build",
-    "test": "yarn test",
-    "eject": "yarn eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
