@@ -16,7 +16,6 @@ function Home() {
 
     return (
         <Container display="flex" flexWrap="wrap">
-        
         <br />
         <Box className="box">
             <AppBar position="center"  color="primary">

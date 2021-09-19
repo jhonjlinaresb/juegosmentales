@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Carta from './carta'
-import './tablero.css'
+import Carta from './carta';
+import './tablero.css';
+
+//import {Grid} from '@material-ui/core';
 
 export default class Tablero extends Component {
   render() {

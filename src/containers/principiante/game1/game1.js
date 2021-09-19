@@ -5,6 +5,9 @@ import construirBaraja from './utils/construirBaraja';
 //import Carta from './carta';
 import './game1.css';
 
+//Importar componentes de material ui
+import {Container} from '@material-ui/core';
+
 const getEstadoInicial = () => {
   const baraja = construirBaraja();
   return {
@@ -23,7 +26,7 @@ class Game1 extends Component {
 
   render() {
     return (
-      <div className="Game1">
+      <Container display="flex" flexWrap="wrap" className="Game1">
         <Header 
           numeroDeIntentos={this.state.numeroDeIntentos}
           resetearPartida={() => this.resetearPartida()}
@@ -33,7 +36,7 @@ class Game1 extends Component {
           parejaSeleccionada={this.state.parejaSeleccionada}
           seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
         />
-      </div>
+      </Container>
     );
   }
 

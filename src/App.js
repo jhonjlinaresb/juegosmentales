@@ -25,6 +25,9 @@ function App() {
     <Route path="/game1" component={Game1} exact />
     
     </Switch>
+    <footer>
+      Jhon Jairo Linares
+    </footer>
     </BrowserRouter>
   );
 }

@@ -1,7 +1,3 @@
-.Game1 {
-    background-color: black;
-  }
-  
-  div:focus {
+Container:focus {
     outline: none !important;
   }
