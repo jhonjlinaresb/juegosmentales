@@ -12,6 +12,9 @@ import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 import NaturePeopleIcon from '@material-ui/icons/NaturePeople';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import TouchAppIcon from '@material-ui/icons/TouchApp';
+import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
+import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 
 import './menu.css';
 
@@ -25,7 +28,7 @@ const useStyles = makeStyles({
   rootAux: ({
     width: '100%',
     height: '100%',
-    backgroundColor: 'black',
+    backgroundColor: 'orange',
     color: 'white',
   }),
   text: ({
@@ -48,10 +51,14 @@ function Menu() {
                 color="transparent"
                 startIcon={<HomeIcon />}
               >
-                Volver
+                Inicio
               </Button>
             </Link>
-            Menú
+            {" "} Menú {" "}
+            
+            </Typography>
+            <Typography align="justify" variant="h5">
+            {" "} <SubdirectoryArrowRightIcon color="action" />  {" "} Elije la dificultad {" "}<TouchAppIcon color="action"  />
             </Typography>
           </Toolbar>
         </AppBar>
@@ -66,9 +73,8 @@ function Menu() {
           <Typography gutterBottom variant="h5" component="h2">
             Principiante <AccessibilityNewIcon />
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h6" color="textSecondary" component="h6">
+            Juego de Cartas, Agiliza tu mente recordando los íconos de las cartas.
           </Typography>
         </CardContent>
      </CardActionArea>
@@ -82,38 +88,36 @@ function Menu() {
           <Typography gutterBottom variant="h5" component="h2">
             Curioso <NaturePeopleIcon />
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          <Typography variant="h6" color="textSecondary" component="h6">
+            Inactivo... <VisibilityOffIcon />
           </Typography>
         </CardContent>
      </CardActionArea>
     </Card>
     <br />
      
-    <Card className={classes.root}>
+    <Card className={classes.rootAux}>
     <CardActionArea>
     <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Experto <FlashOnIcon />
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h6" color="textSecondary" component="h6">
+            Inactivo... <VisibilityOffIcon />
           </Typography>
         </CardContent>
      </CardActionArea>
     </Card>
     <br />
 
-    <Card className={classes.root}>
+    <Card className={classes.rootAux}>
     <CardActionArea>
     <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Genio <EmojiObjectsIcon />
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h6" color="textSecondary" component="h6">
+            Inactivo... <VisibilityOffIcon />
           </Typography>
         </CardContent>
      </CardActionArea>

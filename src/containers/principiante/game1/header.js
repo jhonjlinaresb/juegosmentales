@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import { AppBar, Toolbar, Typography, Button, Box, Container} from '@material-ui/core';
 import ReplayIcon from '@material-ui/icons/Replay';
-import HomeIcon from '@material-ui/icons/Home';
+import MenuIcon from '@material-ui/icons/MenuOpen';
 
 export default class Header extends Component {
   render() {
@@ -16,14 +16,14 @@ export default class Header extends Component {
         <AppBar position="justify"  color="primary">
           <Toolbar variant="regular">
             <Typography align="center" variant="h4">
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/menu" style={{ textDecoration: 'none' }}>
               <Button
                 size="small"
                 variant="contained"
                 color="transparent"
-                startIcon={<HomeIcon />}
+                startIcon={<MenuIcon />}
               >
-                Volver
+                Menú
               </Button>
             </Link>
             {' '}

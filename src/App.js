@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Menu from './components/menu';
 import Home from './components/home';
+import Footer from './components/footer';
 
 //Importamos los containers que generan los juegos.
 import Game1 from './containers/principiante/game1/game1';
@@ -25,9 +26,7 @@ function App() {
     <Route path="/game1" component={Game1} exact />
     
     </Switch>
-    <footer>
-      Jhon Jairo Linares
-    </footer>
+    <Footer />
     </BrowserRouter>
   );
 }
