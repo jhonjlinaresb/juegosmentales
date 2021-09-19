@@ -1,0 +1,12 @@
+.headerGame1 
+{
+    height: 100%;
+    width: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
