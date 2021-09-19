@@ -4,7 +4,7 @@ import './header.css'
 export default class Header extends Component {
   render() {
     return (
-      <header> 
+      <header className="headerGame1"> 
         <div className="titulo">Juego Uno - Memoria</div>
           <div>
             <button className="boton-reiniciar" onClick={this.props.resetearPartida}>

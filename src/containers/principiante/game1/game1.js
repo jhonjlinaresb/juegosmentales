@@ -18,7 +18,7 @@ const getEstadoInicial = () => {
 class Game1 extends Component {
   constructor(props) {
     super(props);
-    this.state = getEstadoInicial();
+    this.state = getEstadoInicial(); //Obtener estado inicial
   }
 
   render() {

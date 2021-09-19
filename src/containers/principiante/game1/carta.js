@@ -7,7 +7,11 @@ export default class Carta extends Component {
     return (
       <div className="carta" onClick={this.props.seleccionarCarta}>
         <ReactCardFlip
-          flipped={this.props.estaSiendoComparada || this.props.fueAdivinada}
+          isFlipped={this.props.estaSiendoComparada || this.props.fueAdivinada}
+          flipDirection={this.props.estaSiendoComparada ? 'right' : 'left'}
+          flipSpeed={this.props.estaSiendoComparada ? 'slow' : 'fast'}
+          flipAnimation={this.props.estaSiendoComparada ? 'slide' : 'fade'}
+          disabled={this.props.estaSiendoComparada}
           disabled={false}
         >
           <div className="portada"></div>
