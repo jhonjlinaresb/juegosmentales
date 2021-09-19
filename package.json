@@ -60,7 +60,6 @@
   "bugs": {
     "url": "https://github.com/jhonjlinaresb/juegosmentales/issues"
   },
-  
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
