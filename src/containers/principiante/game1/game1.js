@@ -8,6 +8,7 @@ import './game1.css';
 //Importar componentes de material ui
 import {Container} from '@material-ui/core';
 
+
 const getEstadoInicial = () => {
   const baraja = construirBaraja();
   return {
